@@ -38,7 +38,6 @@ body {
 }
 
 button {
-  border-radius: 10%;
   width: 20.375rem;
   height: 5.3125rem;
   border: none;
@@ -48,10 +47,19 @@ button {
   -webkit-box-shadow: 0px 0.1875rem 0.625rem rgba(0, 0, 0, 0.4);
           box-shadow: 0px 0.1875rem 0.625rem rgba(0, 0, 0, 0.4);
   padding: 1.5rem 4.875rem 1.25rem 4.875rem;
+  color: white;
 }
 
-.cta-button1 {
+.cta-btn1 {
   padding-bottom: 1.5625rem;
+}
+
+.btn1 {
+  background-color: #6055a5;
+}
+
+.btn2 {
+  background-color: #38cc8c;
 }
 
 .bg h1 {
@@ -69,8 +77,39 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
+  opacity: 0.8;
   font-weight: 400;
   margin-bottom: 4.1875rem;
   margin-top: 0;
+}
+
+.main {
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.main .form {
+  width: 20.4375rem;
+  height: 27.6875rem;
+}
+
+.main .form__group {
+  margin-bottom: 1.0625rem;
+}
+
+.main input[type='text'],
+.main [type='password'] {
+  width: 17.375rem;
+  height: 3.375rem;
+  border: 2px solid #b9b6d3;
+  border-radius: 0.25rem;
+}
+
+.main input[type='text']:focus,
+.main [type='password']:focus {
+  border: 2px solid #3e3c49;
 }
 /*# sourceMappingURL=main.css.map */
