@@ -1,0 +1,28 @@
+.main {
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 0.75rem;
+  text-align: center;
+
+  .form {
+    width: 20.4375rem;
+    height: 27.6875rem;
+
+    &__group {
+      margin-bottom: 1.0625rem;
+    }
+  }
+
+  input[type='text'],
+  [type='password'] {
+    width: 17.375rem;
+    height: 3.375rem;
+    border: 2px solid $grayishBlue;
+    border-radius: 0.25rem;
+
+    &:focus {
+      border: 2px solid $darkBlue;
+    }
+  }
+}
