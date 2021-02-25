@@ -29,7 +29,6 @@ body {
 }
 
 button {
-  border-radius: 10%;
   width: 20.375rem;
   height: 5.3125rem;
   border: none;
@@ -38,8 +37,17 @@ button {
   line-height: 1.4;
   box-shadow: 0px 0.1875rem 0.625rem hsla(0, 0, 0, 0.4);
   padding: 1.5rem 4.875rem 1.25rem 4.875rem;
+  color: white;
 }
 
-.cta-button1 {
+.cta-btn1 {
   padding-bottom: 1.5625rem;
+}
+
+.btn1 {
+  background-color: $blue;
+}
+
+.btn2 {
+  background-color: $green;
 }
