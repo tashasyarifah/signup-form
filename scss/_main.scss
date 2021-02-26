@@ -3,12 +3,9 @@
   outline: none;
   background-color: white;
   border-radius: 0.75rem;
-  text-align: center;
-
+  width: 20.4375rem;
+  height: 27.6875rem;
   .form {
-    width: 20.4375rem;
-    height: 27.6875rem;
-
     &__group {
       margin-bottom: 1.0625rem;
     }
@@ -23,6 +20,33 @@
 
     &:focus {
       border: 2px solid $darkBlue;
+    }
+  }
+
+  .btn2 {
+    background-color: $green;
+    width: 17.375rem;
+    height: 3.375rem;
+    padding: 1.4375rem 2.875rem 1.25rem 2.875rem;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    line-height: 0;
+  }
+
+  .important {
+    padding-top: 0.9375rem;
+  }
+
+  span {
+    color: $grayishBlue;
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+
+    b {
+      color: $red;
     }
   }
 }
