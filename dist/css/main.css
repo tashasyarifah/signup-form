@@ -58,10 +58,6 @@ button {
   background-color: #6055a5;
 }
 
-.btn2 {
-  background-color: #38cc8c;
-}
-
 .bg h1 {
   font-size: 2rem;
   color: white;
@@ -88,10 +84,6 @@ button {
   outline: none;
   background-color: white;
   border-radius: 0.75rem;
-  text-align: center;
-}
-
-.main .form {
   width: 20.4375rem;
   height: 27.6875rem;
 }
@@ -111,5 +103,32 @@ button {
 .main input[type='text']:focus,
 .main [type='password']:focus {
   border: 2px solid #3e3c49;
+}
+
+.main .btn2 {
+  background-color: #38cc8c;
+  width: 17.375rem;
+  height: 3.375rem;
+  padding: 1.4375rem 2.875rem 1.25rem 2.875rem;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  line-height: 0;
+}
+
+.main .important {
+  padding-top: 0.9375rem;
+}
+
+.main span {
+  color: #b9b6d3;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main span b {
+  color: #ff7a7a;
 }
 /*# sourceMappingURL=main.css.map */
