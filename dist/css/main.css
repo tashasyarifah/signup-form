@@ -25,6 +25,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ff7a7a;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
@@ -37,6 +40,11 @@ body {
   margin: 0 1.5rem;
 }
 
+.container--padding1 {
+  padding-top: 1.5625rem;
+  padding-bottom: 1.875rem;
+}
+
 button {
   width: 20.375rem;
   height: 5.3125rem;
@@ -44,8 +52,8 @@ button {
   border-radius: 0.75rem;
   font-size: 1.025rem;
   line-height: 1.4;
-  -webkit-box-shadow: 0px 0.1875rem 0.625rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 0.1875rem 0.625rem rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0.5625rem 0.3125rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0.5625rem 0.3125rem rgba(0, 0, 0, 0.4);
   padding: 1.5rem 4.875rem 1.25rem 4.875rem;
   color: white;
 }
@@ -79,13 +87,17 @@ button {
   margin-top: 0;
 }
 
-.main {
-  border: none;
-  outline: none;
-  background-color: white;
-  border-radius: 0.75rem;
+.main form {
   width: 20.4375rem;
   height: 27.6875rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  -webkit-box-shadow: 0px 0.5625rem 0.3125rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0.5625rem 0.3125rem rgba(0, 0, 0, 0.4);
+}
+
+.main .form {
+  margin-bottom: 4.0625rem;
 }
 
 .main .form__group {
@@ -96,7 +108,7 @@ button {
 .main [type='password'] {
   width: 17.375rem;
   height: 3.375rem;
-  border: 2px solid #b9b6d3;
+  border: 0.0625rem solid #b9b6d3;
   border-radius: 0.25rem;
 }
 
@@ -114,6 +126,13 @@ button {
   text-transform: uppercase;
   border-radius: 0.25rem;
   line-height: 0;
+  -webkit-box-shadow: 0px 0.25rem 0.125rem #11b06b;
+          box-shadow: 0px 0.25rem 0.125rem #11b06b;
+}
+
+.main .btn2:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .main .important {
