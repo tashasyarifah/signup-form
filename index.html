@@ -52,7 +52,7 @@
 
     <section class="main">
       <div class="form">
-        <form>
+        <form class="container--padding1">
           <div class="form__group">
             <label for="fname"></label>
             <input
@@ -74,36 +74,41 @@
           </div>
 
           <div class="form__group">
-            <label for="address"></label>
+            <label for="email-address"></label>
             <input
               type="text"
               name="address"
-              id="address"
+              id="email-address"
+              autocomplete="username"
               placeholder="Email Address"
+              required
+              autofocus
             />
           </div>
 
           <div class="form__group">
             <label for="password"></label>
+
             <input
               type="password"
               name="password"
-              id="password"
+              id="new-password"
+              autocomplete="new-password"
               placeholder="Password"
+              required
             />
           </div>
 
           <div class="cta-button2">
             <button class="btn2" type="submit">Claim your free trial</button>
           </div>
+          <div class="important">
+            <span>
+              By clicking the button, you are agreeing to our
+              <b>Terms and Services</b>
+            </span>
+          </div>
         </form>
-      </div>
-
-      <div class="important">
-        <span>
-          By clicking the button, you are agreeing to our
-          <b>Terms and Services</b>
-        </span>
       </div>
     </section>
 
