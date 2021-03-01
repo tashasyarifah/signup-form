@@ -1,11 +1,13 @@
 .main {
-  border: none;
-  outline: none;
-  background-color: white;
-  border-radius: 0.75rem;
-  width: 20.4375rem;
-  height: 27.6875rem;
+  form {
+    width: 20.4375rem;
+    height: 27.6875rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0px 0.5625rem 0.3125rem hsla(0, 0, 0, 0.4);
+  }
   .form {
+    margin-bottom: 4.0625rem;
     &__group {
       margin-bottom: 1.0625rem;
     }
@@ -15,7 +17,7 @@
   [type='password'] {
     width: 17.375rem;
     height: 3.375rem;
-    border: 2px solid $grayishBlue;
+    border: 0.0625rem solid $grayishBlue;
     border-radius: 0.25rem;
 
     &:focus {
@@ -32,6 +34,12 @@
     text-transform: uppercase;
     border-radius: 0.25rem;
     line-height: 0;
+    box-shadow: 0px 0.25rem 0.125rem hsla(154, 82%, 38%, 1);
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
   }
 
   .important {
