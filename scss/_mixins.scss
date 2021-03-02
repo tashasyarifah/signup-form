@@ -1,0 +1,5 @@
+@mixin for-tablet-potrait {
+  @media (min-width: 37.5rem) {
+    @content;
+  }
+}
