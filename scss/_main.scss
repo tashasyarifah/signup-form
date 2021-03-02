@@ -13,12 +13,14 @@
     }
   }
 
-  input[type='text'],
-  [type='password'] {
+  input {
     width: 17.375rem;
     height: 3.375rem;
     border: 0.0625rem solid $grayishBlue;
     border-radius: 0.25rem;
+    font-size: 0.8175rem;
+    padding: 1.25rem;
+    font-weight: 600;
 
     &:focus {
       border: 2px solid $darkBlue;
