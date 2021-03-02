@@ -52,4 +52,10 @@ button {
 
 .btn1 {
   background-color: $blue;
+  font-weight: 600;
+
+  span {
+    font-weight: 400;
+    opacity: 0.8;
+  }
 }
