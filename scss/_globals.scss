@@ -23,6 +23,10 @@ body {
   line-height: 1.5;
   background-image: url('/images/bg-intro-mobile.png');
   background-repeat: no-repeat;
+
+  @include for-dekstop-up {
+    flex-direction: row;
+  }
 }
 
 .container {
@@ -31,6 +35,13 @@ body {
   &--padding1 {
     padding-top: 1.5625rem;
     padding-bottom: 1.875rem;
+  }
+
+  &--padding2 {
+    @include for-dekstop-up {
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
+    }
   }
 }
 
@@ -47,6 +58,7 @@ button {
 }
 
 .cta-btn1 {
+  position: relative;
   padding-bottom: 1.5625rem;
 }
 
@@ -58,4 +70,8 @@ button {
     font-weight: 400;
     opacity: 0.8;
   }
+}
+
+footer {
+  position: relative;
 }

@@ -1,5 +1,17 @@
-@mixin for-tablet-potrait {
+@mixin for-tablet {
   @media (min-width: 37.5rem) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape {
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin for-dekstop-up {
+  @media (min-width: 1200px) {
     @content;
   }
 }
