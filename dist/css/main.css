@@ -36,6 +36,15 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 1200px) {
+  body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .container {
   margin: 0 1.5rem;
 }
@@ -43,6 +52,13 @@ body {
 .container--padding1 {
   padding-top: 1.5625rem;
   padding-bottom: 1.875rem;
+}
+
+@media (min-width: 1200px) {
+  .container--padding2 {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
 }
 
 button {
@@ -59,6 +75,7 @@ button {
 }
 
 .cta-btn1 {
+  position: relative;
   padding-bottom: 1.5625rem;
 }
 
@@ -72,6 +89,10 @@ button {
   opacity: 0.8;
 }
 
+footer {
+  position: relative;
+}
+
 .bg h1 {
   font-size: 2rem;
   color: white;
@@ -79,6 +100,15 @@ button {
   margin-top: 6.125rem;
   margin-bottom: 1.8125rem;
   line-height: 1.3;
+}
+
+@media (min-width: 1200px) {
+  .bg h1 {
+    text-align: left;
+    width: 95%;
+    font-size: 3.25rem;
+    margin-top: 11.25rem;
+  }
 }
 
 .bg p {
@@ -93,7 +123,15 @@ button {
   margin-top: 0;
 }
 
-.main form {
+@media (min-width: 1200px) {
+  .bg p {
+    text-align: left;
+    width: 85%;
+    font-size: 1.25rem;
+  }
+}
+
+.features form {
   width: 20.4375rem;
   height: 27.6875rem;
   background-color: white;
@@ -102,15 +140,15 @@ button {
           box-shadow: 0px 0.5625rem 0.3125rem rgba(0, 0, 0, 0.4);
 }
 
-.main .form {
+.features .form {
   margin-bottom: 4.0625rem;
 }
 
-.main .form__group {
+.features .form__group {
   margin-bottom: 1.0625rem;
 }
 
-.main input {
+.features input {
   width: 17.375rem;
   height: 3.375rem;
   border: 0.0625rem solid #b9b6d3;
@@ -120,11 +158,11 @@ button {
   font-weight: 600;
 }
 
-.main input:focus {
+.features input:focus {
   border: 2px solid #3e3c49;
 }
 
-.main .btn2 {
+.features .btn2 {
   background-color: #38cc8c;
   width: 17.375rem;
   height: 3.375rem;
@@ -137,16 +175,16 @@ button {
           box-shadow: 0px 0.25rem 0.125rem #11b06b;
 }
 
-.main .btn2:hover {
+.features .btn2:hover {
   cursor: pointer;
   opacity: 0.5;
 }
 
-.main .important {
+.features .important {
   padding-top: 0.9375rem;
 }
 
-.main span {
+.features span {
   color: #b9b6d3;
   font-size: 0.8125rem;
   line-height: 1.6;
@@ -154,7 +192,7 @@ button {
   margin-right: auto;
 }
 
-.main span b {
+.features span b {
   color: #ff7a7a;
 }
 /*# sourceMappingURL=main.css.map */
