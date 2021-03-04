@@ -1,4 +1,8 @@
 .features {
+  @include for-dekstop-up {
+    width: 50%;
+    order: 2;
+  }
   form {
     width: 20.4375rem;
     height: 27.6875rem;
@@ -39,7 +43,6 @@
     box-shadow: 0px 0.25rem 0.125rem hsla(154, 82%, 38%, 1);
 
     &:hover {
-      cursor: pointer;
       opacity: 0.5;
     }
   }

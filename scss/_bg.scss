@@ -1,4 +1,8 @@
 .bg {
+  @include for-dekstop-up {
+    width: 50%;
+    order: 1;
+  }
   h1 {
     font-size: 2rem;
     color: white;
