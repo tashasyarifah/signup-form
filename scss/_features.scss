@@ -1,7 +1,8 @@
 .features {
   @include for-dekstop-up {
     width: 50%;
-    order: 2;
+
+    order: 3;
   }
   form {
     width: 20.4375rem;
@@ -9,6 +10,11 @@
     background-color: white;
     border-radius: 0.75rem;
     box-shadow: 0px 0.5625rem 0.3125rem hsla(0, 0, 0, 0.4);
+
+    @include for-dekstop-up {
+      width: 33.75rem;
+      height: 29.8125rem;
+    }
   }
   .form {
     margin-bottom: 4.0625rem;
@@ -18,13 +24,17 @@
   }
 
   input {
-    width: 17.375rem;
+    width: calc(100% - 30px);
     height: 3.375rem;
     border: 0.0625rem solid $grayishBlue;
     border-radius: 0.25rem;
     font-size: 0.8175rem;
     padding: 1.25rem;
     font-weight: 600;
+
+    @include for-dekstop-up {
+      width: calc(100% - 50px);
+    }
 
     &:focus {
       border: 2px solid $darkBlue;
@@ -33,7 +43,7 @@
 
   .btn2 {
     background-color: $green;
-    width: 17.375rem;
+    width: calc(100% - 30px);
     height: 3.375rem;
     padding: 1.4375rem 2.875rem 1.25rem 2.875rem;
     font-size: 0.9375rem;
@@ -41,6 +51,10 @@
     border-radius: 0.25rem;
     line-height: 0;
     box-shadow: 0px 0.25rem 0.125rem hsla(154, 82%, 38%, 1);
+
+    @include for-dekstop-up {
+      width: calc(100% - 50px);
+    }
 
     &:hover {
       opacity: 0.5;

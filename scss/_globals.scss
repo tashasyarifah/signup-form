@@ -21,7 +21,6 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  width: 100%;
 }
 
 .image {
@@ -45,6 +44,11 @@ body {
   &--padding1 {
     padding-top: 1.5625rem;
     padding-bottom: 1.875rem;
+
+    @include for-dekstop-up {
+      padding-top: 2.625rem;
+      padding-bottom: 2.8125rem;
+    }
   }
 
   &--padding2 {
@@ -68,19 +72,29 @@ button {
   padding: 1.5rem 4.875rem 1.25rem 4.875rem;
   color: white;
   cursor: pointer;
+
+  @include for-dekstop-up {
+    width: 33.75rem;
+  }
 }
 
 .cta-btn1 {
+  position: relative;
   padding-bottom: 1.5625rem;
 
   @include for-dekstop-up {
     position: absolute;
-    top: 0;
+    top: 1.5625rem;
   }
 }
 
 .btn1 {
   background-color: $blue;
+
+  @include for-dekstop-up {
+    position: absolute;
+    height: 3.75rem;
+  }
 }
 
 footer {
