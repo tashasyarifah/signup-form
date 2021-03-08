@@ -23,21 +23,6 @@ body {
   line-height: 1.5;
 }
 
-.image {
-  background: url('/images/bg-intro-mobile.png');
-  position: relative;
-  background-repeat: no-repeat;
-
-  &::before {
-    @include for-dekstop-up {
-      content: '';
-      position: absolute;
-      background: url('/images/bg-intro-desktop.png');
-      background-repeat: no-repeat;
-    }
-  }
-}
-
 .container {
   margin: 0 1.5rem;
 
