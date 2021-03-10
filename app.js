@@ -23,7 +23,7 @@ const floatName = (() => {
     floatPlace.addEventListener('blur', handleBlur);
   };
 
-  //DO eleet
+  //DOM element
   const init = () => {
     const floatBoxes = document.querySelectorAll('.input');
 
