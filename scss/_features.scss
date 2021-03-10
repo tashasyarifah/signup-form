@@ -2,6 +2,7 @@
   position: relative;
   @include for-dekstop-up {
     order: 2;
+    margin-top: 7.5rem;
   }
   form {
     width: 20.4375rem;
@@ -42,7 +43,7 @@
       text-align: left;
       transform: translate(1rem, 0) scale(1);
       transform-origin: top left;
-      transition: all 100ms ease-in-out;
+      transition: all 200ms ease-in-out;
     }
 
     &__input {
