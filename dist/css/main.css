@@ -53,7 +53,7 @@ body {
 @media (min-width: 1200px) {
   .container--padding2 {
     padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 0;
   }
 }
 
@@ -169,6 +169,7 @@ button {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    margin-top: 7.5rem;
   }
 }
 
@@ -218,8 +219,8 @@ button {
           transform: translate(1rem, 0) scale(1);
   -webkit-transform-origin: top left;
           transform-origin: top left;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .features .input__input {
