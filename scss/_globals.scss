@@ -39,7 +39,7 @@ body {
   &--padding2 {
     @include for-dekstop-up {
       padding-top: 7.5rem;
-      padding-bottom: 7.5rem;
+      padding-bottom: 0;
     }
   }
 }
