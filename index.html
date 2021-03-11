@@ -53,56 +53,66 @@
       <div class="form">
         <form class="container--padding1">
           <div class="form__container">
-            <div class="input">
+            <div class="field">
               <input
-                class="input__input"
+                class="field__input"
                 type="text"
                 name="first-name"
                 id="first-name"
+                autocomplete="given-name"
+                required
               />
-              <label class="input__label" for="first-name">First Name</label>
+
+              <label class="field__label" for="first-name">First Name</label>
             </div>
 
-            <div class="input">
+            <div class="field">
               <input
-                class="input__input"
+                class="field__input"
                 type="text"
                 name="last-name"
                 id="last-name"
+                autocomplete="family-name"
+                required
               />
-              <label class="input__label" for="last-name">Last Name</label>
+
+              <label class="field__label" for="last-name">Last Name</label>
             </div>
 
-            <div class="input">
+            <div class="field">
               <input
-                class="input__input"
+                class="field__input"
                 type="text"
                 name="address"
                 id="email-address"
-                autocomplete="username"
+                autocomplete="email"
                 required
                 autofocus
               />
-              <label class="input__label" for="email-address"
+
+              <label class="field__label" for="email-address"
                 >Email Address</label
               >
             </div>
 
-            <div class="input">
+            <div class="field">
               <input
-                class="input__input"
+                class="field__input"
                 type="password"
                 name="password"
                 id="new-password"
                 autocomplete="new-password"
                 required
               />
-              <label class="input__label" for="password">Password</label>
+
+              <label class="field__label" for="password">Password</label>
             </div>
           </div>
 
           <div class="cta-button2">
-            <button class="btn2" type="submit">Claim your free trial</button>
+            <button class="btn2" type="submit" value="submit">
+              Claim your free trial
+            </button>
           </div>
           <div class="important">
             <span>
