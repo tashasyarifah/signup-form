@@ -160,6 +160,21 @@ button {
   }
 }
 
+.features {
+  /*
+  .error-text {
+    position: absolute;
+    top: 3.2rem;
+    font-size: 0.8rem;
+    align-items: right;
+    color: $red;
+  }
+
+  .hidden {
+    display: none
+  }*/
+}
+
 @media (min-width: 1200px) {
   .features {
     -webkit-box-ordinal-group: 3;
@@ -185,11 +200,11 @@ button {
   }
 }
 
-.features .form {
+.features .content {
   margin-bottom: 4.0625rem;
 }
 
-.features .form__container {
+.features .content__container {
   position: relative;
 }
 
@@ -244,6 +259,10 @@ button {
   top: -0.75rem;
   font-size: 0.75rem;
   left: 0.3rem;
+}
+
+.features input.invalid {
+  border: 0.0625rem solid #ff7a7a;
 }
 
 .features .btn2 {
