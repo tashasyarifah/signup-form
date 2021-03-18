@@ -1,14 +1,11 @@
-const form = document.querySelector('form');
-const nameInput = document.querySelector('input[name]');
-
-const validateInputs = () => {
-  if (!nameInput.value) {
-    nameInput.classList.add('invalid');
-    nameInput.nextElementSibling.classList.remove('hidden');
-  }
-};
+let form = document.getElementById('form');
+let firstName = document.getElementById('firstName');
+let lastName = document.getElementById('lastName');
+let email = document.getElementById('email');
+let password = document.getElementById('new-password');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  validateInputs();
 });
+
+function checkValid() {}
