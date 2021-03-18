@@ -160,21 +160,6 @@ button {
   }
 }
 
-.features {
-  /*
-  .error-text {
-    position: absolute;
-    top: 3.2rem;
-    font-size: 0.8rem;
-    align-items: right;
-    color: $red;
-  }
-
-  .hidden {
-    display: none
-  }*/
-}
-
 @media (min-width: 1200px) {
   .features {
     -webkit-box-ordinal-group: 3;
@@ -186,7 +171,7 @@ button {
 
 .features form {
   width: 20.4375rem;
-  height: 27.6875rem;
+  height: 35.75rem;
   background-color: white;
   border-radius: 0.75rem;
   -webkit-box-shadow: 0px 0.5625rem 0.3125rem rgba(0, 0, 0, 0.4);
@@ -209,7 +194,7 @@ button {
 }
 
 .features .field {
-  margin-bottom: 1.0625rem;
+  margin-bottom: 2.8125rem;
   position: relative;
   height: 3.375rem;
   width: 17.5rem;
@@ -221,6 +206,7 @@ button {
   width: 100%;
   height: 100%;
   font-size: 1.2rem;
+  font-family: inherit;
   font-weight: 600;
   top: 0;
   left: 0;
@@ -237,6 +223,23 @@ button {
 
 .features .field__input:focus {
   border-color: #3e3c49;
+}
+
+.features .field__error {
+  position: absolute;
+  right: 1rem;
+  top: 0.9rem;
+  display: none;
+}
+
+.features .field__alert {
+  position: absolute;
+  font-size: 0.7rem;
+  margin-top: 4rem;
+  right: 1rem;
+  color: #ff7a7a;
+  font-style: oblique;
+  display: none;
 }
 
 .features .field__label {
