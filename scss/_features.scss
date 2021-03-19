@@ -63,8 +63,8 @@
 
     &__alert {
       position: absolute;
-      font-size: 0.7rem;
-      margin-top: 4rem;
+      font-size: 0.8rem;
+      margin-top: 3.5rem;
       right: 1rem;
       color: $red;
       font-style: oblique;
@@ -91,10 +91,6 @@
     top: -0.75rem;
     font-size: 0.75rem;
     left: 0.3rem;
-  }
-
-  input.invalid {
-    border: 0.0625rem solid $red;
   }
 
   .btn2 {
