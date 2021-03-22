@@ -242,6 +242,18 @@ button {
   display: none;
 }
 
+.features .field__error input {
+  border: 0.0625rem solid #ff7a7a;
+}
+
+.features .field__error svg {
+  display: block;
+}
+
+.features .field__error p.field__alert {
+  display: block;
+}
+
 .features .field__label {
   font-size: 1rem;
   font-weight: 600;
