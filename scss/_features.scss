@@ -71,6 +71,18 @@
       display: none;
     }
 
+    &__error input {
+      border: 0.0625rem solid $red;
+    }
+
+    &__error svg {
+      display: block;
+    }
+
+    &__error p.field__alert {
+      display: block;
+    }
+
     &__label {
       font-size: 1rem;
       font-weight: 600;
