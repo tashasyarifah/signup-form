@@ -52,6 +52,10 @@
       &:focus {
         border-color: $darkBlue;
       }
+
+      @include for-dekstop-up {
+        width: 200%;
+      }
     }
 
     &__error {
