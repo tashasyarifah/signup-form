@@ -38,6 +38,12 @@ body {
   margin: 0 1.5rem;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    margin: 0 2.4375rem;
+  }
+}
+
 .container--padding1 {
   padding-top: 1.5625rem;
   padding-bottom: 1.875rem;
@@ -201,6 +207,14 @@ button {
   background-color: white;
 }
 
+@media (min-width: 1200px) {
+  .features .field {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
 .features .field__input {
   position: absolute;
   width: 100%;
@@ -223,12 +237,6 @@ button {
 
 .features .field__input:focus {
   border-color: #3e3c49;
-}
-
-@media (min-width: 1200px) {
-  .features .field__input {
-    width: 200%;
-  }
 }
 
 .features .field__error {
