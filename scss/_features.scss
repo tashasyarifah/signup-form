@@ -30,6 +30,10 @@
     width: 17.5rem;
     background-color: white;
 
+    @include for-dekstop-up {
+      width: fit-content;
+    }
+
     &__input {
       position: absolute;
       width: 100%;
@@ -45,6 +49,7 @@
       padding: 1rem;
       outline: none;
 
+
       &:hover {
         border-color: $blue;
       }
@@ -53,9 +58,7 @@
         border-color: $darkBlue;
       }
 
-      @include for-dekstop-up {
-        width: 200%;
-      }
+      
     }
 
     &__error {
