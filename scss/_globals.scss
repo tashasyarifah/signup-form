@@ -26,6 +26,10 @@ body {
 .container {
   margin: 0 1.5rem;
 
+  @include for-dekstop-up {
+    margin: 0 2.4375rem;
+  }
+
   &--padding1 {
     padding-top: 1.5625rem;
     padding-bottom: 1.875rem;
