@@ -38,6 +38,12 @@ body {
   margin: 0 1.5rem;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    margin: 0 2.4375rem;
+  }
+}
+
 .container--padding1 {
   padding-top: 1.5625rem;
   padding-bottom: 1.875rem;
@@ -201,6 +207,12 @@ button {
   background-color: white;
 }
 
+@media (min-width: 1200px) {
+  .features .field {
+    width: 28rem;
+  }
+}
+
 .features .field__input {
   position: absolute;
   width: 100%;
@@ -291,7 +303,7 @@ button {
 
 @media (min-width: 1200px) {
   .features .btn2 {
-    width: calc(100% - 50px);
+    width: 28.8125rem;
   }
 }
 
