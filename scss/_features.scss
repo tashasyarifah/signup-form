@@ -31,7 +31,7 @@
     background-color: white;
 
     @include for-dekstop-up {
-      width: fit-content;
+      width: 28rem;
     }
 
     &__input {
@@ -49,7 +49,6 @@
       padding: 1rem;
       outline: none;
 
-
       &:hover {
         border-color: $blue;
       }
@@ -57,8 +56,6 @@
       &:focus {
         border-color: $darkBlue;
       }
-
-      
     }
 
     &__error {
@@ -124,7 +121,7 @@
     box-shadow: 0px 0.25rem 0.125rem hsla(154, 82%, 38%, 1);
 
     @include for-dekstop-up {
-      width: calc(100% - 50px);
+      width: 28.8125rem;
     }
 
     &:hover {
