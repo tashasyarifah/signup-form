@@ -58,14 +58,14 @@
       }
     }
 
-    &__error {
+    &__erroricon {
       position: absolute;
       right: 1rem;
       top: 0.9rem;
       display: none;
     }
 
-    &__alert {
+    &__text {
       position: absolute;
       font-size: 0.8rem;
       margin-top: 3.5rem;
@@ -73,18 +73,6 @@
       color: $red;
       font-style: oblique;
       display: none;
-    }
-
-    &__error input {
-      border: 0.0625rem solid $red;
-    }
-
-    &__error svg {
-      display: block;
-    }
-
-    &__error p.field__alert {
-      display: block;
     }
 
     &__label {
@@ -98,6 +86,20 @@
       cursor: text;
       transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
       background: white;
+    }
+
+    //error states
+
+    &__error input {
+      border: 0.0625rem solid $red;
+    }
+
+    &__error svg.form__erroricon {
+      display: block;
+    }
+
+    &__error p.field__text {
+      display: block;
     }
   }
 
