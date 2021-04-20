@@ -18,29 +18,29 @@ function validateInputs(e) {
   passwordValue = password.value.trim();
 
   if (firstNameValue === '') {
-    indicateError(firstNameValue, 'First Name cannot be empty');
+    checkError(firstNameValue, 'First Name cannot be empty');
   }
 
   if (lastNameValue === '') {
-    indicateError(lastNameValue, 'Last Name cannot be empty');
+    checkError(lastNameValue, 'Last Name cannot be empty');
   }
 
   if (emailValue === '') {
-    indicateError(emailValue, 'Email cannot be empty');
-  } else if (!email_reg.test(emailValue)) {
-    indicateError(emailValue, 'Email cannot be empty');
+    checkError(emailValue, 'Email cannot be empty');
+  } else if(!email_reg.test(emailValue)) {
+    checkError(emailValue, 'Email cannot be empty');
   }
 
   if (passwordlValue === '') {
-    indicateError(passwordValue, 'Password cannot be empty');
+    checkError(passwordValue, 'Password cannot be empty');
   } else if (!pass_reg.test(passwordValue)) {
-    indicateError(passwordValue, 'Password cannot be empty');
-  }
+    checkError(passwordValue, 'Password cannot be empty');
+  } 
 }
 
-function indicateError(input, alertMessages) {
-  let formControl = input.parentElement;
-  formControl.classList.add('.field__error');
-  let alert = formControl.querySelector('.field__error');
-  alert.innertText = alertMessages;
+function checkError(input, errorText) {
+  let field = input.parentElement;
+  field.classList.add('.field__error');
+  let text = field.querySelector('.field__text');
+  text.innertText = errorText;
 }
