@@ -237,14 +237,14 @@ button {
   border-color: #3e3c49;
 }
 
-.features .field__error {
+.features .field__erroricon {
   position: absolute;
   right: 1rem;
   top: 0.9rem;
   display: none;
 }
 
-.features .field__alert {
+.features .field__text {
   position: absolute;
   font-size: 0.8rem;
   margin-top: 3.5rem;
@@ -252,18 +252,6 @@ button {
   color: #ff7a7a;
   font-style: oblique;
   display: none;
-}
-
-.features .field__error input {
-  border: 0.0625rem solid #ff7a7a;
-}
-
-.features .field__error svg {
-  display: block;
-}
-
-.features .field__error p.field__alert {
-  display: block;
 }
 
 .features .field__label {
@@ -278,6 +266,18 @@ button {
   -webkit-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
   background: white;
+}
+
+.features .field__error input {
+  border: 0.0625rem solid #ff7a7a;
+}
+
+.features .field__error svg.form__erroricon {
+  display: block;
+}
+
+.features .field__error p.field__text {
+  display: block;
 }
 
 .features .field__input:focus ~ .field__label,
