@@ -28,19 +28,19 @@ function validateInputs(e) {
   if (emailValue === '') {
     checkError(emailValue, 'Email cannot be empty');
   } else if(!email_reg.test(emailValue)) {
-    checkError(emailValue, 'Email cannot be empty');
+    checkError(emailValue, 'Email is not validate');
   }
 
   if (passwordlValue === '') {
     checkError(passwordValue, 'Password cannot be empty');
   } else if (!pass_reg.test(passwordValue)) {
-    checkError(passwordValue, 'Password cannot be empty');
+    checkError(passwordValue, 'Password min 8 characters');
   } 
 }
 
 function checkError(input, errorText) {
   let field = input.parentElement;
-  field.classList.add('.field__error');
+  field.classList.add('field__error');
   let text = field.querySelector('.field__text');
-  text.innertText = errorText;
+  text.innerText = errorText;
 }
