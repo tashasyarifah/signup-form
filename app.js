@@ -40,7 +40,7 @@ function validateInputs(e) {
 
 function checkError(input, errorText) {
   let field = input.parentElement;
-  field.classList.add('field__error');
+  field.classList.add('.field__error');
   let text = field.querySelector('.field__text');
   text.innerText = errorText;
 }
