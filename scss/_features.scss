@@ -34,6 +34,19 @@
       width: 28rem;
     }
 
+    &__label {
+
+      font-size: 1rem;
+      font-weight: 600;
+      color: $blue;
+      position: absolute;
+      padding: 0 0.8rem;
+      left: 0.1rem;
+      top: 0.85rem;
+      cursor: text;
+      background: white;
+    }
+
     &__input {
       position: absolute;
       width: 100%;
@@ -48,11 +61,9 @@
       border-radius: 0.25rem;
       padding: 1rem;
       outline: none;
-    
 
       &:hover {
         border-color: $blue;
-        
       }
 
       &:focus {
@@ -60,51 +71,40 @@
       }
     }
 
-    &__erroricon {
+    .icon {
       position: absolute;
       right: 1rem;
       top: 0.9rem;
-      display: none;
+      
     }
 
-    &__text {
+    .text {
       position: absolute;
       font-size: 0.8rem;
       margin-top: 3.5rem;
       right: 1rem;
       color: $red;
       font-style: oblique;
+    }
+
+    .hidden {
       display: none;
     }
 
-    &__label {
+    //invalid states
 
-      font-size: 1rem;
-      font-weight: 600;
-      color: $blue;
-      position: absolute;
-      padding: 0 0.8rem;
-      left: 0.1rem;
-      top: 0.85rem;
-      cursor: text;
-      background: white;
-
-    
-    }
-
-    //error states
-
-    &__error input {
+    .invalid input  {
       border: 0.0625rem solid $red;
     }
 
-    &__error svg.form__erroricon {
+    .invalid svg.icon  {
       display: block;
     }
 
-    &__error p.field__text {
+    .invalid p.text  {
       display: block;
     }
+   
   }
 
   .btn2 {
