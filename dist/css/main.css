@@ -212,6 +212,18 @@ button {
   }
 }
 
+.features .field__label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6055a5;
+  position: absolute;
+  padding: 0 0.8rem;
+  left: 0.1rem;
+  top: 0.85rem;
+  cursor: text;
+  background: white;
+}
+
 .features .field__input {
   position: absolute;
   width: 100%;
@@ -236,44 +248,34 @@ button {
   border-color: #3e3c49;
 }
 
-.features .field__erroricon {
+.features .field .icon {
   position: absolute;
   right: 1rem;
   top: 0.9rem;
-  display: none;
 }
 
-.features .field__text {
+.features .field .text {
   position: absolute;
   font-size: 0.8rem;
   margin-top: 3.5rem;
   right: 1rem;
   color: #ff7a7a;
   font-style: oblique;
+}
+
+.features .field .hidden {
   display: none;
 }
 
-.features .field__label {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #6055a5;
-  position: absolute;
-  padding: 0 0.8rem;
-  left: 0.1rem;
-  top: 0.85rem;
-  cursor: text;
-  background: white;
-}
-
-.features .field__error input {
+.features .field .invalid input {
   border: 0.0625rem solid #ff7a7a;
 }
 
-.features .field__error svg.form__erroricon {
+.features .field .invalid svg.icon {
   display: block;
 }
 
-.features .field__error p.field__text {
+.features .field .invalid p.text {
   display: block;
 }
 
