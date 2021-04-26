@@ -15,31 +15,26 @@
       height: 29.8125rem;
     }
   }
-  .content {
-    margin-bottom: 4.0625rem;
-
-    &__box {
-      position: relative;
-    }
-  }
+  
 
   .field {
     margin-bottom: 2.8125rem;
-    position: relative;
+   display: block;
     height: 3.375rem;
     width: 17.5rem;
     background-color: white;
 
     @include for-dekstop-up {
       width: 28rem;
+      margin-bottom: 2.5rem;
     }
 
     &__label {
-
+      display: block;
       font-size: 1rem;
       font-weight: 600;
       color: $blue;
-      position: absolute;
+      /* position: absolute; */
       padding: 0 0.8rem;
       left: 0.1rem;
       top: 0.85rem;
@@ -48,7 +43,7 @@
     }
 
     &__input {
-      position: absolute;
+      
       width: 100%;
       height: 100%;
       font-size: 1.2rem;
@@ -72,14 +67,14 @@
     }
 
     .icon {
-      position: absolute;
+     
       right: 1rem;
       top: 0.9rem;
       
     }
 
     .text {
-      position: absolute;
+      
       font-size: 0.8rem;
       margin-top: 3.5rem;
       right: 1rem;
@@ -93,15 +88,15 @@
 
     //invalid states
 
-    .invalid input  {
+    input .invalid   {
       border: 0.0625rem solid $red;
     }
 
-    .invalid svg.icon  {
+    svg .invalid  {
       display: block;
     }
 
-    .invalid p.text  {
+    p.text .invalid {
       display: block;
     }
    
