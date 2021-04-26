@@ -1,6 +1,3 @@
-const form = document.querySelector('form');
-const firstName = document.querySelector('input[name="firstName"]');
-const lastName = document.querySelector('input[name="lastName"]');
 
 const isValidEmail = (email) => {
   const RegExp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -12,11 +9,14 @@ const isValidPassword = (password) => {
   return RegExp.test(String(password).toLowerCase());
 };
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  console.log("haa");
-})
+const form = document.querySelector('form');
+const firstName = document.querySelector('input[name="firstName"]');
+const lastName = document.querySelector('input[name="lastName"]');
 
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  console.log('hi');
+})
 
 
 
