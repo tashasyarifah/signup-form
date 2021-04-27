@@ -50,20 +50,16 @@
           <b>Tryit free 7 days</b> then $20/mo. thereafter
         </button>
       </div>
-      <div class="content">
-        <form action="/" method="GET" class="container--padding1">
-          <div class="container">
-            <div class="field">
-              <label class="field__label" for="firstName">First Name</label>
+      <div class="box container--padding1">
+        <form action="/" method="GET" class="container form">
+            <div class="form__group">
+              <label class="form__label" for="firstName">First Name</label>
               <input
-                class="field__input "
-                type="text"
+                class="form__input "
                 name="firstName"
                 id="firstName"
                 autocomplete="given-name"
-                placeholder=" "
                 required
-                aria-required="true"
               />
               <svg
                 class="icon hidden"
@@ -81,17 +77,14 @@
               <p class="text hidden">First name cannot be empty</p>
             </div>
 
-            <div class="field">
-              <label class="field__label" for="lastName">Last Name</label>
+            <div class="form__group">
+              <label class="form__label" for="lastName">Last Name</label>
               <input
-                class="field__input "
-                type="text"
+                class="form__input "
                 name="lastName"
                 id="lastName"
                 autocomplete="family-name"
-                placeholder=" "
                 required
-                aria-required="true"
               />
               <svg
                 class="icon hidden"
@@ -107,20 +100,17 @@
                 </g>
               </svg>
               <p class="text hidden">Last name cannot be empty</p>
-              
             </div>
 
-            <div class="field">
-              <label class="field__label" for="email">Email Address</label>
+            <div class="form__group">
+              <label class="form__label" for="email">Email Address</label>
               <input
-                class="field__input"
-                type="text"
+                class="form__input"
+                type="email"
                 name="email"
                 id="email"
-                autocomplete="email"
-                placeholder=" "
+                autocomplete="username"
                 required
-                aria-required="true"
               />
               <svg
                 class="icon hidden"
@@ -136,21 +126,20 @@
                 </g>
               </svg>
               <p class="text hidden">Email cannot be empty</p>
-              
             </div>
 
-            <div class="field">
-              <label class="field__label" for="password">Password</label>
+            <div class="form__group">
+              <label class="form__label" for="password">Password</label>
               <input
-                class="field__input "
+                class="form__input "
                 type="password"
                 name="password"
                 id="new-password"
                 autocomplete="new-password"
-                placeholder=" "
+                minlength="8"
                 required
-                aria-required="true"
               />
+
               <svg
                 class="icon hidden"
                 width="24"
@@ -165,10 +154,8 @@
                 </g>
               </svg>
               <p class="text hidden">Password cannot be empty</p>
-              
             </div>
-          </div>
-
+         
           <div class="cta-button2">
             <button class="btn2" type="submit">Claim your free trial</button>
           </div>
