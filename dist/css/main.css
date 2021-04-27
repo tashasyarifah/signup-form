@@ -174,7 +174,7 @@ button {
   }
 }
 
-.features form {
+.features .box {
   width: 20.4375rem;
   height: 35.75rem;
   background-color: white;
@@ -184,33 +184,47 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .features form {
+  .features .box {
     width: 33.75rem;
     height: 29.8125rem;
   }
 }
 
-.features .field {
-  margin-bottom: 2.8125rem;
-  display: block;
+.features .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.features .form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
   height: 3.375rem;
   width: 17.5rem;
-  background-color: white;
 }
 
 @media (min-width: 1200px) {
-  .features .field {
+  .features .form__group {
     width: 28rem;
-    margin-bottom: 2.5rem;
   }
 }
 
-.features .field__label {
-  display: block;
+.features .form__label {
   font-size: 1rem;
   font-weight: 600;
   color: #6055a5;
-  /* position: absolute; */
+  position: absolute;
   padding: 0 0.8rem;
   left: 0.1rem;
   top: 0.85rem;
@@ -218,7 +232,7 @@ button {
   background: white;
 }
 
-.features .field__input {
+.features .form__input {
   width: 100%;
   height: 100%;
   font-size: 1.2rem;
@@ -233,40 +247,40 @@ button {
   outline: none;
 }
 
-.features .field__input:hover {
+.features .form__input:hover {
   border-color: #6055a5;
 }
 
-.features .field__input:focus {
+.features .form__input:focus {
   border-color: #3e3c49;
 }
 
-.features .field .icon {
+.features .form .icon {
+  position: absolute;
   right: 1rem;
   top: 0.9rem;
 }
 
-.features .field .text {
+.features .form .text {
   font-size: 0.8rem;
-  margin-top: 3.5rem;
-  right: 1rem;
+  margin-top: 0;
   color: #ff7a7a;
   font-style: oblique;
 }
 
-.features .field .hidden {
+.features .form .hidden {
   display: none;
 }
 
-.features .field input .invalid {
+.features .form input .invalid {
   border: 0.0625rem solid #ff7a7a;
 }
 
-.features .field svg .invalid {
+.features .form svg .invalid {
   display: block;
 }
 
-.features .field p.text .invalid {
+.features .form p.text .invalid {
   display: block;
 }
 
