@@ -10,13 +10,15 @@ const isValidPassword = (password) => {
 };
 
 const form = document.querySelector('form');
-const firstName = document.querySelector('input[name="firstName"]');
-const lastName = document.querySelector('input[name="lastName"]');
+const fnInput = document.getElementsByClassName('firstName');
+const lnInput = document.getElementsByClassName('lastName');
+
+
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  console.log('hi');
-})
+  
+});
 
 
 
