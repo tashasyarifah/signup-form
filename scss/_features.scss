@@ -16,36 +16,33 @@
     }
   }
   
-  
-
   .form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.3rem;
     
     &__group {
+      position: relative;
       display: flex;
       flex-direction: column;
-      position: relative;
       height: 3.375rem;
       width: 17.5rem;
-      
-    
+
       @include for-dekstop-up {
         width: 28rem;
       }
     }
 
     &__label {
-      font-size: 1rem;
+      position: absolute;
+      font-size: 0.85rem;
       font-weight: 600;
       color: $blue;
-      position: absolute;
-      padding: 0 0.8rem;
-      left: 0.1rem;
-      top: 0.85rem;
-      cursor: text;
-      background: white;
+      background: white; 
+      top: -0.5rem;
+      left: 0.7rem;
+      padding: 0 0.3rem;
+      transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
     }
 
     &__input {
@@ -54,10 +51,7 @@
       font-size: 1.2rem;
       font-family: inherit;
       font-weight: 600;
-      top: 0;
-      left: 0;
       border: 0.0625rem solid $grayishBlue;
-      background: none;
       border-radius: 0.25rem;
       padding: 1rem;
       outline: none;
@@ -70,42 +64,24 @@
         border-color: $darkBlue;
       }
     }
-
-    .icon {
-      position: absolute;
-      right: 1rem;
-      top: 0.9rem;
-      
-    }
-
-    .text {
-      font-size: 0.8rem;
-      margin-top: 0;
-      color: $red;
-      font-style: oblique;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    //invalid states
-
-    input .invalid   {
-      border: 0.0625rem solid $red;
-    }
-
-    svg .invalid  {
-      display: block;
-    }
-
-    p.text .invalid {
-      display: block;
-    }
-   
   }
 
+  .icon {
+    position: absolute;
+    top: 0.7rem;
+    left: 15rem;
+  }
 
+  .text {
+    font-size: 0.8rem;
+    margin-top: 0;
+    color: $red;
+    font-style: oblique;
+  }
+
+  .hidden {
+    display: none;
+  }
 
   .btn2 {
     background-color: $green;
