@@ -10,8 +10,8 @@ const isValidPassword = (password) => {
 };
 
 const form = document.querySelector('form');
-const fnInput = document.getElementsByClassName('firstName');
-const lnInput = document.getElementsByClassName('lastName');
+const fnInput = document.getElementsByName('firstName');
+const lnInput = document.getElementsByName('lastName');
 
 
 
