@@ -198,10 +198,11 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 2.3rem;
 }
 
 .features .form__group {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,7 +210,6 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
   height: 3.375rem;
   width: 17.5rem;
 }
@@ -221,15 +221,16 @@ button {
 }
 
 .features .form__label {
-  font-size: 1rem;
+  position: absolute;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #6055a5;
-  position: absolute;
-  padding: 0 0.8rem;
-  left: 0.1rem;
-  top: 0.85rem;
-  cursor: text;
   background: white;
+  top: -0.5rem;
+  left: 0.7rem;
+  padding: 0 0.3rem;
+  -webkit-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
 }
 
 .features .form__input {
@@ -238,10 +239,7 @@ button {
   font-size: 1.2rem;
   font-family: inherit;
   font-weight: 600;
-  top: 0;
-  left: 0;
   border: 0.0625rem solid #b9b6d3;
-  background: none;
   border-radius: 0.25rem;
   padding: 1rem;
   outline: none;
@@ -255,33 +253,21 @@ button {
   border-color: #3e3c49;
 }
 
-.features .form .icon {
+.features .icon {
   position: absolute;
-  right: 1rem;
-  top: 0.9rem;
+  top: 0.7rem;
+  left: 15rem;
 }
 
-.features .form .text {
+.features .text {
   font-size: 0.8rem;
   margin-top: 0;
   color: #ff7a7a;
   font-style: oblique;
 }
 
-.features .form .hidden {
+.features .hidden {
   display: none;
-}
-
-.features .form input .invalid {
-  border: 0.0625rem solid #ff7a7a;
-}
-
-.features .form svg .invalid {
-  display: block;
-}
-
-.features .form p.text .invalid {
-  display: block;
 }
 
 .features .btn2 {
