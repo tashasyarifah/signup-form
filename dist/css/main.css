@@ -108,6 +108,15 @@ button {
   }
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 @media (min-width: 1200px) {
   footer {
     width: 100%;
@@ -268,6 +277,14 @@ button {
 
 .features .hidden {
   display: none;
+}
+
+.features .invalid input {
+  border-color: #ff7a7a;
+}
+
+.features .invalid input:focus {
+  outline: none;
 }
 
 .features .btn2 {
