@@ -323,7 +323,7 @@ button {
   padding-top: 0.9375rem;
 }
 
-.features span {
+.features .important__text {
   color: #b9b6d3;
   font-size: 0.8125rem;
   line-height: 1.6;
@@ -331,7 +331,7 @@ button {
   margin-right: auto;
 }
 
-.features span b {
+.features .important__text b {
   color: #ff7a7a;
 }
 /*# sourceMappingURL=main.css.map */
