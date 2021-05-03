@@ -43,7 +43,7 @@
         </button>
       </div>
       <div class="box container--padding1">
-        <form action="/" method="GET" class="container form">
+        <form action="/" id="form" method="GET" class="container form">
             <div class="form__group">
               <label class="form__label" for="firstName">First Name</label>
               <input
@@ -66,7 +66,7 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <p class="text hidden">First name cannot be empty</p>
+              <span class="text hidden">First name cannot be empty</span>
             </div>
 
             <div class="form__group">
@@ -91,7 +91,7 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <p class="text hidden">Last name cannot be empty</p>
+              <span class="text hidden">Last name cannot be empty</span>
             </div>
 
             <div class="form__group">
@@ -117,8 +117,8 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <p class="text hidden
-              error">Email cannot be empty</p>
+              <span class="text hidden
+              error">Email cannot be empty</span>
             </div>
 
             <div class="form__group">
@@ -146,14 +146,14 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <p class="text hidden">Password cannot be empty</p>
+              <span class="text hidden">Password cannot be empty</span>
             </div>
          
           <div class="cta-button2">
             <button class="btn2" type="submit">Claim your free trial</button>
           </div>
           <div class="important">
-            <span>
+            <span class="important__text">
               By clicking the button, you are agreeing to our
               <b>Terms and Services</b>
             </span>
