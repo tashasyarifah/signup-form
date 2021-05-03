@@ -113,17 +113,18 @@
 
   .important {
     padding-top: 0.9375rem;
-  }
 
-  span {
-    color: $grayishBlue;
-    font-size: 0.8125rem;
-    line-height: 1.6;
-    margin-left: auto;
-    margin-right: auto;
+    &__text {
+      color: $grayishBlue;
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      margin-left: auto;
+      margin-right: auto;
 
-    b {
-      color: $red;
+      b {
+        color: $red;
+      }
     }
   }
+
 }
