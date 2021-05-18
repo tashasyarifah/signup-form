@@ -63,6 +63,7 @@
       &:focus {
         border-color: $darkBlue;
       }
+
     }
   }
 
@@ -70,27 +71,23 @@
     position: absolute;
     top: 0.7rem;
     left: 15rem;
+    display: none;
   }
 
-  .text {
+
+  //error text 
+  .error {
     font-size: 0.8rem;
     margin-top: 0;
     color: $red;
     font-style: oblique;
+
+    &.active {
+      padding: 0.1rem;
+    }
   }
 
-  .hidden {
-    display: none;
-  }
-
-  //invalid input field
-  .invalid input{
-    border-color: $red;
-  }
   
-  .invalid input:focus {
-    outline: none;
-  }
   .btn2 {
     background-color: $green;
     width: 17.5rem;
