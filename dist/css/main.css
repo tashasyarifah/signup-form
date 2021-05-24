@@ -275,7 +275,7 @@ button {
   position: absolute;
   top: 0.7rem;
   left: 15rem;
-  display: none;
+  visibility: hidden;
 }
 
 .features .error {
@@ -283,10 +283,6 @@ button {
   margin-top: 0;
   color: #ff7a7a;
   font-style: oblique;
-}
-
-.features .error.active {
-  padding: 0.1rem;
 }
 
 .features .btn2 {

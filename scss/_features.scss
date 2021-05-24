@@ -67,11 +67,12 @@
     }
   }
 
+  //error icon
   .icon {
     position: absolute;
     top: 0.7rem;
     left: 15rem;
-    display: none;
+    visibility: hidden;
   }
 
 
@@ -82,9 +83,6 @@
     color: $red;
     font-style: oblique;
 
-    &.active {
-      padding: 0.1rem;
-    }
   }
 
   
