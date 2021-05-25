@@ -63,27 +63,37 @@
       &:focus {
         border-color: $darkBlue;
       }
+    }
 
+    &__icon {
+      position: absolute;
+      top: 0.7rem;
+      left: 15rem;
+      display: none;
+    }
+
+    &__text {
+      font-size: 0.8rem;
+      margin-top: 0;
+      color: $red;
+      font-style: oblique;
+      display: none;
+    }
+
+    //error validation 
+    &__error input {
+      border-color: $red;
+    }
+
+    &__error svg.form__icon {
+      display: block;
+    }
+
+    &__error span.form__text {
+      display: block;
     }
   }
-
-  //error icon
-  .icon {
-    position: absolute;
-    top: 0.7rem;
-    left: 15rem;
-    visibility: hidden;
-  }
-
-
-  //error text 
-  .error {
-    font-size: 0.8rem;
-    margin-top: 0;
-    color: $red;
-    font-style: oblique;
-
-  }
+  
 
   
   .btn2 {
