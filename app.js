@@ -1,8 +1,8 @@
-const form = document.getElementById('form');
-const fname = document.getElementById('firstName');
-const lname = document.getElementById('lastName');
-const email = document.getElementById('email');
-const pwd = document.getElementById('new-password');
+let form = document.getElementById('form');
+let fname = document.getElementById('firstName');
+let lname = document.getElementById('lastName');
+let email = document.getElementById('email');
+let pwd = document.getElementById('new-password');
 
 
 
@@ -15,11 +15,11 @@ form.addEventListener('submit', (e) => {
 function validateInputs() {
 
   //trim
-  const fnameValue = fname.value.trim();
-  const lnameValue = lname.value.trim();
-  const emailValue = email.value.trim();
-  const pwdValue = pwd.value.trim();
-  const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  fnameValue = fname.value.trim();
+  lnameValue = lname.value.trim();
+  emailValue = email.value.trim();
+  pwdValue = pwd.value.trim();
+  emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
   //First name validation
@@ -55,18 +55,16 @@ function validateInputs() {
 }
 
 function errorValidation(input, message) {
-  const span = input.nextElementSibling;
-
-  span.innerText = message;
-  input.className = '.icon';
-  span.className = '.error';
-
+  let formTeam = input.parentElement;
+  formTeam.classList.add(".form__error");
+  let text = formTeam.querySelector(".form__text");
+  text.innerText = message;
 };
 
 function successValidation(input) {
-  input.className = '';
-  input.nextElementSibling.className = '';
-  input.nextElementSibling.innerHTML = '';
+  let formTeam = input.parentElement;
+
+  formTeam.classList.remove("form__error");
 }
 
 
