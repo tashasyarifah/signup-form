@@ -4,8 +4,6 @@ let lname = document.getElementById('lastName');
 let email = document.getElementById('email');
 let pwd = document.getElementById('new-password');
 
-
-
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -15,11 +13,11 @@ form.addEventListener('submit', (e) => {
 function validateInputs() {
 
   //trim
-  fnameValue = fname.value.trim();
-  lnameValue = lname.value.trim();
-  emailValue = email.value.trim();
-  pwdValue = pwd.value.trim();
-  emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const fnameValue = fname.value.trim();
+  const lnameValue = lname.value.trim();
+  const emailValue = email.value.trim();
+  const pwdValue = pwd.value.trim();
+  const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
   //First name validation
@@ -56,7 +54,7 @@ function validateInputs() {
 
 function errorValidation(input, message) {
   let formTeam = input.parentElement;
-  formTeam.classList.add(".form__error");
+  formTeam.classList.add("form__error");
   let text = formTeam.querySelector(".form__text");
   text.innerText = message;
 };
@@ -66,7 +64,4 @@ function successValidation(input) {
 
   formTeam.classList.remove("form__error");
 }
-
-
-
 
