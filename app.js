@@ -1,8 +1,8 @@
-let form = document.getElementById('form');
-let fname = document.getElementById('firstName');
-let lname = document.getElementById('lastName');
-let email = document.getElementById('email');
-let pwd = document.getElementById('new-password');
+const form = document.getElementById('form');
+const fname = document.getElementById('firstName');
+const lname = document.getElementById('lastName');
+const email = document.getElementById('email');
+const pwd = document.getElementById('new-password');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -52,16 +52,16 @@ function validateInputs() {
 
 }
 
-function errorValidation(input, message) {
+function errorValidation(input, msg) {
   let formTeam = input.parentElement;
-  formTeam.classList.add("form__error");
-  let text = formTeam.querySelector(".form__text");
-  text.innerText = message;
+  formTeam.classList.add("error");
+  let message = formTeam.querySelector(' span.errortxt')
+  message.innerText = msg;
 };
 
 function successValidation(input) {
   let formTeam = input.parentElement;
 
-  formTeam.classList.remove("form__error");
-}
+  formTeam.classList.remove("error");
+};
 
