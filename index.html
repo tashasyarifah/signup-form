@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="/dist/css/main.css" />
+    <link rel="stylesheet" href="/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -25,7 +25,7 @@
   </head>
   <body>
     <section class="bg">
-      <div class="bg__text">
+      <div class="introtexts">
         <h1>Learn to code by watching others</h1>
 
         <p>
@@ -36,25 +36,24 @@
       </div>
     </section>
 
-    <section class="features container--padding2">
+    <section class="features">
       <div class="cta-btn1">
         <button class="btn1">
           <b>Tryit free 7 days</b> then $20/mo. thereafter
         </button>
       </div>
-      <div class="box container--padding1">
-        <form action="/" id="form" method="GET" class="container form">
-            <div class="form__group">
-              <label class="form__label" for="firstName">First Name</label>
+      <div class="container">
+        <form action="/" id="form" method="GET" class="form">
+            <div class="group">
+              <label for="firstName">First Name</label>
               <input
-                class="form__input "
                 name="firstName"
                 id="firstName"
                 autocomplete="given-name"
                 
               />
               <svg
-                class="form__icon"
+                class="erroricon"
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,20 +65,19 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <span class="form__text" aria-live="polite"></span>
+              <span class="errortxt" aria-live="polite"></span>
             </div>
 
-            <div class="form__group">
-              <label class="form__label" for="lastName">Last Name</label>
+            <div class="group">
+              <label for="lastName">Last Name</label>
               <input
-                class="form__input "
                 name="lastName"
                 id="lastName"
                 autocomplete="family-name"
                 
               />
               <svg
-                class="form__icon"
+                class="erroricon"
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -91,13 +89,12 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <span class="form__text" aria-live="polite"></span>
+              <span class="errortxt" aria-live="polite"></span>
             </div>
 
-            <div class="form__group">
-              <label class="form__label" for="email">Email Address</label>
+            <div class="group">
+              <label for="email">Email Address</label>
               <input
-                class="form__input"
                 type="email"
                 name="email"
                 id="email"
@@ -105,7 +102,7 @@
                 
               />
               <svg
-                class="form__icon"
+                class="erroricon"
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,13 +114,12 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <span class="form__text" aria-live="polite"></span>
+              <span class="errortxt" aria-live="polite"></span>
             </div>
 
-            <div class="form__group">
-              <label class="form__label" for="password">Password</label>
+            <div class="group">
+              <label for="password">Password</label>
               <input
-                class="form__input "
                 type="password"
                 name="password"
                 id="new-password"
@@ -133,7 +129,7 @@
               />
 
               <svg
-                class="form__icon"
+                class="erroricon"
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -145,14 +141,14 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <span class="form__text" aria-live="polite"></span>
+              <span class="errortxt" aria-live="polite"></span>
             </div>
          
           <div class="cta-button2">
             <button class="btn2" type="submit">Claim your free trial</button>
           </div>
           <div class="important">
-            <span class="important__text">
+            <span class="ctatxt">
               By clicking the button, you are agreeing to our
               <b>Terms and Services</b>
             </span>
