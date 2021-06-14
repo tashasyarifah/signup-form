@@ -1,289 +1,298 @@
 
 :root {
-    --red: hsl(0, 100%, 74%);
-    --green: hsl(154, 59%, 51%);
-    --blue: hsl(248, 32%, 49%);
-    --darkBlue: hsl(249, 10%, 26%);
-    --grayishBlue: hsl(246, 25%, 77%);
+	--green: hsl(154, 59%, 51%);
+	--blue: hsl(248, 32%, 49%);
+	--darkBlue: hsl(249, 10%, 26%);
+	--grayishBlue: hsl(246, 25%, 77%);
+	--red: hsl(0, 100%, 74%);
 }
 
 html {
-    font-size: 100%;
-    box-sizing: border-box;
+  font-size: 100%;
+  box-sizing: border-box;
     
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    background-color: var(--red);
-    background-image: url('/images/bg-intro-mobile.png');
-    background-repeat: initial;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: var(--red);
+  background-image: url('/images/bg-intro-mobile.png');
+  background-repeat: initial;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .introtexts {
-    margin-top: 6.0625rem;
+  margin-top: 6.0625rem;
 }
 
 h1 {
-    font-size: 2rem;
-    color: white;
-    font-weight: 600;
-    line-height: 1.3;
-    margin-top: 0;
-    margin-bottom: 1.8rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 1.8rem;
 }
 
 p {
-    color: white;
-    line-height: 1.6;
-    margin-top: 0;
-    margin-bottom: 4.25rem;
+  color: white;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 4.25rem;
 }
 
 button {
-    position: relative;
-    display: block;
-    width: 20.375rem;
-    height: 5.6875rem;
-    padding: 1.375rem 4rem;
-    line-height: 1.5;
-    border: none;
-    font-size: 1.125rem;
-    border-radius: 0.7rem;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 20px 10px -10px var(--darkBlue);
+  position: relative;
+  display: block;
+  width: 20.375rem;
+  height: 5.6875rem;
+  padding: 1.375rem 4rem;
+  line-height: 1.5;
+  border: none;
+  font-size: 1.125rem;
+  border-radius: 0.7rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 20px 10px -10px var(--darkBlue);
 }
 
 .btn1 {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .cta-btn1 {
-    margin-bottom: 1.5625rem;
+  margin-bottom: 1.5625rem;
 }
 
 .container {
-    width: 20.5rem;
-    background-color: white;
-    border-radius: 0.7rem;
-    padding: 1.5625rem;
+  width: 20.5rem;
+  background-color: white;
+  border-radius: 0.7rem;
+  padding: 1.5625rem;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .group {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 0.6rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0.6rem;
 }
 
 label {
-    position: absolute;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--blue);
-    background: white;
-    top: -0.5rem;
-    left: 0.7rem;
-    padding: 0 0.5rem;
+  position: absolute;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--blue);
+  background: white;
+  top: -0.5rem;
+  left: 0.7rem;
+  padding: 0 0.5rem;
 }
 
 input {
-    width: 100%;
-    height: 100%;
-    font-size: 1.0625rem;
-    font-family: inherit;
-    font-weight: 600;
-    border: 0.0625rem solid var(--grayishBlue);
-    border-radius: 0.25rem;
-    padding: 1rem;
-    outline: none;
+  width: 100%;
+  height: 100%;
+  font-size: 1.0625rem;
+  font-family: inherit;
+  font-weight: 600;
+  border: 0.0625rem solid var(--grayishBlue);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  outline: none;
 }
 
 input:hover {
-    border-color: var(--green);
+  border-color: var(--green);
 }
 
 input:focus {
-    border-color: var(--darkBlue);
+  border-color: var(--darkBlue);
 }
 
 .erroricon {
-    position: absolute;
-    top: 1rem;
-    left: 15rem;
-    visibility: hidden;
+  position: absolute;
+  top: 1rem;
+  left: 15rem;
+  visibility: hidden;
 }
 
 .errortxt {
-    font-size: 0.8rem;
-    color: var(--red);
-    font-style: oblique;
-    text-align: right;
-    visibility: hidden;
-    margin-bottom: 1.2rem;
+  font-size: 0.8rem;
+  color: var(--red);
+  font-style: oblique;
+  text-align: right;
+  visibility: hidden;
+  margin-bottom: 1.2rem;
 }
 
 /* error validation */
 .error input {
-    border-color: var(--red);
+  border-color: var(--red);
 }
 
 .error svg.erroricon {
-    visibility: visible;
+  visibility: visible;
 }
 
 .error span.errortxt {
-    visibility: visible;
+  visibility: visible;
 }
 
 .btn2 {
-    background-color: var(--green);
-    width: 100%;
-    height: 3.4375rem;
-    padding: 0.625rem 2.5rem;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 500;
-    box-shadow: 0 14px 7px -7px var(--green);
+  background-color: var(--green);
+  width: 100%;
+  height: 3.4375rem;
+  padding: 0.625rem 2.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 14px 7px -7px var(--green);
 
 }
 
 .important {
-    margin-top: 0.875rem;
+  margin-top: 0.875rem;
 }
 
 .ctatxt {
-    font-size: 0.8125rem;
-    line-height: 1.3;
-    color: var(--grayishBlue);
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  color: var(--grayishBlue);
 }
 
 span b {
-    color: var(--red);
+  color: var(--red);
 }
 
 footer {
-    margin-top: 4.25rem;
+  margin-top: 4.25rem;
     
 }
 
 p.attribution {
-    margin-bottom: 0;
-    font-size: 0.6875rem;
-    text-align: center;
+  margin-bottom: 0;
+  font-size: 0.6875rem;
+  text-align: center;
 }
   
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 /* For tablets */
-@media screen and (min-width: 41.5625em) {
+@media screen and (min-width: 41.5625em) and (max-width: 61.9375em) {
     h1 {
-        font-size: 2.7rem;
+      font-size: 2.7rem;
     }
 
     p {
-        font-size: 1.25rem;
-        padding: 0 4.4rem;
+      font-size: 1.25rem;
+      padding: 0 4.4rem;
     }
 
     .btn1, .container {
-        width: 30rem;
+      width: 30rem;
     }
 
     .btn1 {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
 
-    label {
-        font-size: 0.9rem;
+    label 
+      font-size: 0.9rem;
     }
 
     .erroricon {
-        left: 24.7rem;
+      left: 24.7rem;
     }
 
     .errortxt {
-        font-size: 1rem;
+      font-size: 1rem;
     }
 
     p.attribution {
-        font-size: 1rem
+      font-size: 1rem
     }
 }
 
 /* For Laptops */
-@media screen and (min-width: 62em) {
+@media screen and (min-width: 62em) and (max-width: 64em) {
+  h1 {
+	  font-size: 3.375rem;
+  }
 
-    h1 {
-        font-size: 3.375rem;
-    }
+  p {
+    font-size: 1.5rem;
+    padding: 0 5rem;
+	}
 
-    p {
-        font-size: 1.5rem;
-        padding: 0 5rem;
-    }
+	.bg {
+		width: 50%;
+    padding-top: 11.25rem;
+  }
 
-    .btn1, .container {
-        width: 33.6875rem;
-    }
+	.btn1, .container {
+		width: 30rem;
+	}
 
-    .erroricon {
-        left: 28.5rem;
-    }
+  .erroricon {
+    left: 28.5rem;
+  }
 
-    label {
-        font-size: 1.1rem;
-        top: -0.8rem;
-    }
+  label {
+    font-size: 1.1rem;
+    top: -0.8rem;
+  }
 
-    input {
-        font-size: 1.5rem;
-    }
+  input {
+    font-size: 1.5rem;
+  }
 }
 
 /* For bigger screen */
 @media screen and (min-width: 64.0625em) {
-    body {
-        background-image: url('/images/bg-intro-desktop.png');
-    }
+  body {
+    background-image: url('/images/bg-intro-desktop.png');
+  }
 
-    .bg {
-        width: 50%;
-        padding-top: 11.25rem;
-    }
+  .bg {
+		width: 50%;
+    padding-top: 11.25rem;
+  }
 
-    .introtexts {
-        margin-top: 0;
-        text-align: left;
-    }
+	.btn1, .container {
+		width: 30rem;
+	}
 
-    p {
-        padding: 0;
-    }
 
-    .bg, .features {
-        margin-top: 7.5rem;
-    }
+  .introtexts {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  .bg, .features {
+    margin-top: 7.5rem;
+  }
 }
