@@ -30,6 +30,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .introtexts {
@@ -52,7 +53,7 @@ p {
   margin-bottom: 4.25rem;
 }
 
-button {
+button, .button {
   position: relative;
   display: block;
   width: 20.375rem;
@@ -69,6 +70,7 @@ button {
 
 .btn1 {
   background-color: var(--blue);
+  text-decoration: none;
 }
 
 .cta-btn1 {
@@ -80,6 +82,8 @@ button {
   background-color: white;
   border-radius: 0.7rem;
   padding: 1.5625rem;
+  box-shadow: 0 20px 10px -10px var(--darkBlue);
+ 
 }
 
 .form {
@@ -198,7 +202,7 @@ p.attribution {
 }
 
 /* For tablets */
-@media screen and (min-width: 41.5625em) and (max-width: 61.9375em) {
+@media only screen and (min-width: 41.5625em) {
     h1 {
       font-size: 2.7rem;
     }
@@ -221,7 +225,7 @@ p.attribution {
     }
 
     .erroricon {
-      left: 24.7rem;
+      /* left: 24.7rem; */
     }
 
     .errortxt {
@@ -234,7 +238,7 @@ p.attribution {
 }
 
 /* For Laptops */
-@media screen and (min-width: 62em) and (max-width: 64em) {
+@media only screen and (min-width: 62em) {
   h1 {
 	  font-size: 3.375rem;
   }
@@ -245,12 +249,12 @@ p.attribution {
 	}
 
 	.bg {
-		width: 50%;
-    padding-top: 11.25rem;
+		width: 30%;
+    
   }
 
 	.btn1, .container {
-		width: 30rem;
+		width: 25rem;
 	}
 
   .erroricon {
@@ -268,7 +272,7 @@ p.attribution {
 }
 
 /* For bigger screen */
-@media screen and (min-width: 64.0625em) {
+@media only screen and (min-width: 64.0625em) {
   body {
     background-image: url('/images/bg-intro-desktop.png');
   }
@@ -276,6 +280,10 @@ p.attribution {
   .bg {
 		width: 50%;
     padding-top: 11.25rem;
+  }
+
+  h1 {
+    font-size: 4rem;
   }
 
 	.btn1, .container {
