@@ -17,10 +17,6 @@ html {
   box-sizing: inherit;
 }
 
-main {
-  display: flex;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -30,11 +26,17 @@ body {
   background-color: var(--red);
   background-image: url('/images/bg-intro-mobile.png');
   background-repeat: initial;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
   overflow-x: hidden;
   
+}
+
+.mr-ml {
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .introtexts {
@@ -46,23 +48,21 @@ h1 {
   color: white;
   font-weight: 600;
   line-height: 1.3;
-  margin-top: 0;
   margin-bottom: 1.8rem;
+  margin-top: 0;
 }
 
 p {
   color: white;
   line-height: 1.6;
-  margin-top: 0;
   margin-bottom: 4.25rem;
+  margin-top: 0;
 }
 
 button, .button {
   position: relative;
   display: block;
-  width: 20.375rem;
-  height: 5.6875rem;
-  padding: 1.375rem 4rem;
+  padding: 1rem;
   line-height: 1.5;
   border: none;
   font-size: 1.125rem;
@@ -86,7 +86,6 @@ button, .button {
 }
 
 .container {
-  width: 20.5rem;
   background-color: white;
   border-radius: 0.7rem;
   padding: 1.5625rem;
@@ -142,7 +141,8 @@ input:focus {
 .erroricon {
   position: absolute;
   top: 1rem;
-  left: 15rem;
+  align-self: flex-end;
+  margin-right: 0.5rem;
   visibility: hidden;
 }
 
@@ -172,7 +172,7 @@ input:focus {
   background-color: var(--green);
   width: 100%;
   height: 3.4375rem;
-  padding: 0.625rem 2.5rem;
+  padding: 1rem;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 500;
@@ -226,30 +226,31 @@ p.attribution {
 /* For tablets */
 @media only screen and (min-width: 40.0625em) {
 
+  .mr-ml {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
 
   h1 {
-    font-size: 2.7rem;
+    font-size: 3.2rem;
+    line-height: 1.2;
   }
 
   p {
     font-size: 1.25rem;
-    padding: 0 4.4rem;
-  }
-
-  .btn1, .container {
-    width: 30rem;
   }
 
   .btn1 {
     font-size: 1.2rem;
   }
 
-  label {
-    font-size: 0.9rem;
+  .features {
+    padding: 0 6rem;
   }
 
-  .erroricon {
-    left: 24.7rem;
+  label {
+    font-size: 1rem;
+    top: -0.7rem;
   }
 
   .errortxt {
@@ -262,10 +263,11 @@ p.attribution {
 }
 
 /* For Laptops */
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 48.0625em) {
 
   body {
     background-image: url('/images/bg-intro-desktop.png');
+  
   }
 
   .introtexts {
