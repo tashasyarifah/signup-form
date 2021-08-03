@@ -26,20 +26,27 @@ body {
   background-color: var(--red);
   background-image: url('/images/bg-intro-mobile.png');
   background-repeat: initial;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
   overflow-x: hidden;
   
 }
 
-.mr-ml {
-  margin-right: 1rem;
-  margin-left: 1rem;
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1ch;
+  
 }
 
-.introtexts {
+.mr-ml { 
+  margin-right: 1rem;
+  margin-left: 1rem;
+} 
+
+.mt {
   margin-top: 6.0625rem;
 }
 
@@ -69,7 +76,7 @@ button, .button {
   border-radius: 0.7rem;
   color: white;
   cursor: pointer;
-  box-shadow: 0 20px 10px -10px var(--darkBlue);
+  box-shadow: 0 20px 10px -10px hsla(249, 10%, 26%, 0.5);
 }
 
 .btn1 {
@@ -89,7 +96,7 @@ button, .button {
   background-color: white;
   border-radius: 0.7rem;
   padding: 1.5625rem;
-  box-shadow: 0 20px 10px -10px var(--darkBlue);
+  box-shadow: 0 20px 10px -10px hsla(249, 10%, 26%, 0.5);
  
 }
 
@@ -171,12 +178,11 @@ input:focus {
 .btn2 {
   background-color: var(--green);
   width: 100%;
-  height: 3.4375rem;
   padding: 1rem;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 500;
-  box-shadow: 0 14px 7px -7px var(--green);
+  box-shadow: 0 14px 7px -7px hsla(151, 18%, 29%, 0.5);
 }
 
 .cta-btn2:hover {
@@ -244,13 +250,17 @@ p.attribution {
     font-size: 1.2rem;
   }
 
-  .features {
-    padding: 0 4rem;
+  .container {
+    padding: 2rem;
   }
 
   label {
     font-size: 1rem;
     top: -0.7rem;
+  }
+
+  .btn2 {
+    letter-spacing: 0.1rem;
   }
 
   .errortxt {
@@ -270,13 +280,16 @@ p.attribution {
   }
 
   main {
-    display: flex;
+    flex-direction: row;
   }
 
   .bg {
     width: 50%;
     margin-right: 1rem;
-    margin-top: 7rem;
+  }
+
+  .btn1 {
+    padding: 1.1rem;
   }
 
   .introtexts {
@@ -288,12 +301,8 @@ p.attribution {
   }
 
   .features {
-    width: 50%;
-    margin-top: 6rem;
-    padding: 0;
-    margin-left: 0;
+    margin-top: 5rem;
   }
-  
 
   label {
     font-size: 1.1rem;
@@ -307,23 +316,48 @@ p.attribution {
 
 /* Laptops L */ 
 @media screen and (min-width: 64.0625em) {
-  main {
+  .ml-for-laptop {
     margin-left: 5rem;
+  }
+
+  .mr-for-laptop {
     margin-right: 5rem;
   }
 
+  .btn1 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
   h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     opacity: 0.9;
   }
 
   .features {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    max-width: fit-content;
+  }
+
+  label {
+    font-size: 1.3rem;
+  }
+
+  .errortxt {
+    font-size: 1.2rem;
+  }
+
+  .btn2 {
+    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+    padding: 1.5rem;
+  }
+
+  .ctatxt {
+    font-size: 1rem;
   }
 
   p.attribution {
