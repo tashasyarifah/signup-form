@@ -6,8 +6,7 @@
 
 This is a part of challenges from [Frontend Mentor](https://www.frontendmentor.io). Creating a sign up form using HTML, CSS, and JavaScript. Also, trying to applied web accessibility for building a form. It took me 2 months for creating this. I've learn many things and gain valuable knowledge. 
 
-Click [signup form](signup-form-ruby.vercel.app
-) to see my work. 
+Click [signup form](https://signup-form-ruby.vercel.app/) to see my work. 
 ## Lesson Learned
 
 First, learning how to create a form using semantically HTML that can lead to accessible form. I've learned that HTML provide a lot of functionality that useful without adding JavaScript.  
