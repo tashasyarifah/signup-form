@@ -9,9 +9,9 @@ This is a part of challenges from [Frontend Mentor](https://www.frontendmentor.i
 Click [signup form](https://signup-form-ruby.vercel.app/) to see my work. 
 ## Lesson Learned
 
-First, learning how to create a form using semantically HTML that can lead to accessible form. I've learned that HTML provide a lot of functionality that useful without adding JavaScript.  
+First, learning how to create a form using semantically HTML that can lead to accessible form. I learn that HTML itself is powerful. Knowing how to use it on the correct terms is a skill. 
 
-Second, knowing whether or not to use ARIA. ARIA is important when you're trying to make an accessible website. Considerate a lot of factors, made me realize that I should learn about it carefully. One of the website that help me is [Web Accessibility Tutorial](https://www.w3.org/WAI/tutorials/forms/.) It shows me how to create a website that meet WCAG. 
+Second, knowing whether to use ARIA. ARIA is important when you're trying to make an accessible website. Seeing a lot ofaspects made me realize that I should learn about it. One of the website that help me is [Web Accessibility Tutorial](https://www.w3.org/WAI/tutorials/forms/.) It shows me how to create a website that meet WCAG. 
 
 Third, creating a better functionality when using JavaScript. Using this [guidelines](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) I know there are constraints validation API and custom control. For this challenge, I decided to create a custom control. I learn how to use RegEx for email and password. It's been fun journey.  
 
