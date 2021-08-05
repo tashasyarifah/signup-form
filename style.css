@@ -149,7 +149,7 @@ input:focus {
   position: absolute;
   top: 1rem;
   align-self: flex-end;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   visibility: hidden;
 }
 
@@ -311,6 +311,10 @@ p.attribution {
 
   input {
     font-size: 1.5rem;
+  }
+
+  .erroricon {
+    top: 1.3rem;
   }
 }
 
