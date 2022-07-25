@@ -209,7 +209,7 @@ span b:hover {
 }
 
 footer {
-  padding-top: 4.25rem;
+  padding-top: 3rem;
     
 }
 
@@ -277,14 +277,13 @@ p.attribution {
 
   body {
     background-image: url('/images/bg-intro-desktop.png');
-    width: 48.0625em;
-    margin: 0 auto;
   }
 
   
   main {
     flex-direction: row;
     gap: 0;
+    padding-top: 5rem;
   }
 
   .bg {
@@ -329,10 +328,14 @@ p.attribution {
   .group {
     padding-bottom: 0;
   }
+
+  footer {
+    padding-top: 5rem;
+  }
 }
 
 /* Laptops L */ 
-/* @media screen and (min-width: 64.0625em) {
+@media screen and (min-width: 64.0625em) {
   .ml-for-laptop {
     margin-left: 5rem;
   }
@@ -380,4 +383,4 @@ p.attribution {
   p.attribution {
     font-size: 1.25rem;
   }
-} */
+}
